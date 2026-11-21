@@ -1,0 +1,6 @@
+<!doctype html><html lang="fa"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>پلیر آپارات · وب</title><style>/* On a desktop the app runs inside a 412×892 phone frame (so it gets a phone-sized window); on a phone it fills the screen. */
+html,body{height:100%;margin:0;background:#16151a;font-family:system-ui,sans-serif}
+.wrap{min-height:100%;display:grid;place-items:center;padding:24px;box-sizing:border-box}
+.phone{width:412px;height:892px;border-radius:48px;overflow:hidden;box-shadow:0 0 0 10px #2a282d,0 0 0 11px #4a4650,0 30px 80px rgba(0,0,0,.5);background:#000}
+.phone iframe{width:100%;height:100%;border:0;display:block}
+@media (max-width:520px){.wrap{padding:0}.phone{width:100vw;height:100vh;border-radius:0;box-shadow:none}}</style></head><body><script>/* phones open the app itself (installable PWA); desktops get the phone frame */if (matchMedia('(max-width: 600px), (pointer: coarse)').matches) {location.replace('app.html');}</script><div class="wrap"><div class="phone"><iframe src="app.html" allow="autoplay; fullscreen"></iframe></div></div></body></html>
